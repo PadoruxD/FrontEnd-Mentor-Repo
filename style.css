@@ -1,70 +1,66 @@
-
 body {
+    margin: 0;
+    height: 110vh;
     display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center;     /* Alinha verticalmente */
-    background-color: #f5e9dd; /* Cor de fundo da página */
-    margin: 0;               /* Remove margens padrão do navegador */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    background-color: #111;  /* ou a cor que você quiser */
     
-  }
+    }
 
-.recipe-container {
-    background-color: white;
-    border-radius: 16px;
-    padding: 32px;
-    max-width: 600px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.recipe-image {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 24px;
-  }
-
-.prep-time {
-  background-color: #fef3f4;          /* Fundo rosinha claro */
-  border-left: 4px solid #b91c1c;     /* Borda vermelha escura à esquerda */
-  padding: 16px;
-  border-radius: 8px;
-  margin: 20px 0;
-  font-family: young serif;
-  font-size: 15px;
-}
-
-
-p{
-    font-family: Outfit;
-}
-
-h2{
-    font-family: young serif;
-    font-size: 24px;
+.foto {
+    text-align: center; /* Centraliza tudo dentro, inclusive texto e imagem */
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 15px;
+    width: 320px;
+    margin: 0 auto;
     
 }
-li{
-    text-align: justify;
-    font-family: outfit;
+.foto-rosto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto; /* Isso é essencial */
+   
+  }
+
+h1, p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    
+  }
+  h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(53, 53, 175);
+  }
+  
+  .botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+.meu-botao {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 250px; /* tamanho fixo para manter alinhado */
+  text-align: center;
 }
-.nutrition {
-    margin-top: 32px;
-  }
-  
-  .nutrition-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    border-top: 1px solid #e2e2e2;
-  }
-  
-  .nutrition-item:last-child {
-    border-bottom: 1px solid #e2e2e2;
-  }
-  
-  .label {
-    color: #555;
-  }
-  
-  .value {
-    font-weight: bold;
-    color: #843c0c; /* um laranja escuro parecido com a imagem */
-  }
+
+.meu-botao:hover {
+  background-color: #c4f82a; /* verde-limão no hover */
+  color: #141414;
+}
